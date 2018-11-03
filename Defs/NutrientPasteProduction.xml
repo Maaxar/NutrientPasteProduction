@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<RecipeDef Name="MakeNutrientBase" Abstract="True">
-        <defName>MakeNutrientBase</defName>
+	<RecipeDef Name="MakeNutrientPasteBase" Abstract="True">
+        <defName>MakeNutrientPasteBase</defName>
         <workSpeedStat>UnskilledLaborSpeed</workSpeedStat>
         <workSkill>Crafting</workSkill> <!-- This states what skill gives speed boost? Definitely not what allows prioritization / disallowal... -->
         <effectWorking>Cremate</effectWorking>
@@ -32,15 +32,12 @@
 				<li>InsectJelly</li>
 			</disallowedThingDefs>
 		</defaultIngredientFilter>
-    </RecipeDef>
-
-    <RecipeDef Name="MakeNutrientPasteBase" ParentName="MakeNutrientBase" Abstract="True">
-        <researchPrerequisite>NutrientPaste</researchPrerequisite>
+		<researchPrerequisite>NutrientPaste</researchPrerequisite>
     </RecipeDef>
 
     <RecipeDef ParentName="MakeNutrientPasteBase">
         <defName>MakeNutrientPaste</defName>
-        <label>Make a nutrient paste meal from raw food</label>
+        <label>Make nutrient paste from raw food</label>
         <description>Make a nutrient paste meal by extracting nutrients from raw food.</description>
         <jobString>Refining nutrient paste.</jobString>
 
@@ -62,8 +59,8 @@
 
     <RecipeDef ParentName="MakeNutrientPasteBase">
         <defName>MakeNutrientPasteBulk</defName>
-        <label>Make 10 nutrient paste meals from raw food</label>
-        <description>Make 10 nutrient paste meals by extracting nutrients from raw food.</description>
+        <label>Make batch of nutrient paste from raw food</label>
+        <description>Make a batch of 10 nutrient paste meals by extracting nutrients from raw food.</description>
         <jobString>Refining nutrient paste.</jobString>
 
         <ingredients>
