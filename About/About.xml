@@ -2,6 +2,7 @@
 <ModMetaData>
     <name>Nutrient Paste Production</name>
     <author>Maaxar</author>
+    <url>https://github.com/Maaxar/NutrientPasteProduction</url>
     <targetVersion>1.0.2059</targetVersion>
     <description>
 	Does not alter the vanilla paste dispenser.
