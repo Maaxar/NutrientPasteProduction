@@ -17,9 +17,4 @@
 	
 	Let me know if you think anything needs to be adjusted for balance.
 	</description>
-	<Manifest>
-    <identifier>NutrientPasteProduction</identifier>
-    <version>0.1.0.0</version>
-    <downloadUri>https://github.com/Maaxar/NutrientPasteProduction/releases/latest</downloadUri>
-</Manifest>
 </ModMetaData>
