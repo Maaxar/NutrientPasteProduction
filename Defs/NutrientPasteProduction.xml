@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<RecipeDef Name="MakeNutrientBase" Abstract="True">
+        <defName>MakeNutrientBase</defName>
+        <workSpeedStat>UnskilledLaborSpeed</workSpeedStat>
+        <workSkill>Crafting</workSkill> <!-- This states what skill gives speed boost? Definitely not what allows prioritization / disallowal... -->
+        <effectWorking>Cremate</effectWorking>
+        <soundWorking>Recipe_Cremate</soundWorking>
+        <allowMixingIngredients>true</allowMixingIngredients>
+        <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+		<recipeUsers>
+			<li>BiofuelRefinery</li>
+		</recipeUsers>
+		<fixedIngredientFilter>
+			<categories>
+				<li>FoodRaw</li>
+			</categories>
+			<specialFiltersToDisallow>
+				<li>AllowPlantFood</li>
+			</specialFiltersToDisallow>
+		</fixedIngredientFilter>
+		<defaultIngredientFilter>
+			<categories>
+				<li>FoodRaw</li>
+			</categories>
+			<disallowedCategories>
+				<li>EggsFertilized</li>
+			</disallowedCategories>
+			<disallowedThingDefs>
+				<li>Meat_Human</li>
+				<li>Meat_Megaspider</li>
+				<li>InsectJelly</li>
+			</disallowedThingDefs>
+		</defaultIngredientFilter>
+    </RecipeDef>
+
+    <RecipeDef Name="MakeNutrientPasteBase" ParentName="MakeNutrientBase" Abstract="True">
+        <researchPrerequisite>NutrientPaste</researchPrerequisite>
+    </RecipeDef>
+
+    <RecipeDef ParentName="MakeNutrientPasteBase">
+        <defName>MakeNutrientPaste</defName>
+        <label>Make a nutrient paste meal from raw food</label>
+        <description>Make a nutrient paste meal by extracting nutrients from raw food.</description>
+        <jobString>Refining nutrient paste.</jobString>
+
+        <ingredients>
+            <li>
+                <filter>
+                    <categories>
+                        <li>FoodRaw</li>
+                    </categories>
+                </filter>
+                <count>0.3</count>
+            </li>
+        </ingredients>
+        <products>
+            <MealNutrientPaste>1</MealNutrientPaste>
+        </products>
+        <workAmount>200</workAmount>
+    </RecipeDef>
+
+    <RecipeDef ParentName="MakeNutrientPasteBase">
+        <defName>MakeNutrientPasteBulk</defName>
+        <label>Make 10 nutrient paste meals from raw food</label>
+        <description>Make 10 nutrient paste meals by extracting nutrients from raw food.</description>
+        <jobString>Refining nutrient paste.</jobString>
+
+        <ingredients>
+            <li>
+                <filter>
+                    <categories>
+                        <li>FoodRaw</li>
+                    </categories>
+                </filter>
+                <count>3</count>
+            </li>
+        </ingredients>
+        <products>
+            <MealNutrientPaste>10</MealNutrientPaste>
+        </products>
+        <targetCountAdjustment>10</targetCountAdjustment>
+        <workAmount>2000</workAmount>
+    </RecipeDef>
+</Defs>
