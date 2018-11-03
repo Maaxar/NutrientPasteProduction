@@ -39,7 +39,7 @@
         <defName>MakeNutrientPaste</defName>
         <label>Make nutrient paste from raw food</label>
         <description>Make a nutrient paste meal by extracting nutrients from raw food.</description>
-        <jobString>Refining nutrient paste.</jobString>
+        <jobString>Making nutrient paste.</jobString>
 
         <ingredients>
             <li>
@@ -61,7 +61,7 @@
         <defName>MakeNutrientPasteBulk</defName>
         <label>Make batch of nutrient paste from raw food</label>
         <description>Make a batch of 10 nutrient paste meals by extracting nutrients from raw food.</description>
-        <jobString>Refining nutrient paste.</jobString>
+        <jobString>Making a batch of nutrient paste.</jobString>
 
         <ingredients>
             <li>

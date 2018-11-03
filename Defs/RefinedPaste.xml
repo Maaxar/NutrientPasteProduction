@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef Name="RefinedMealBase" Abstract="True">
+    <thingClass>ThingWithComps</thingClass>
+    <category>Item</category>
+    <useHitPoints>true</useHitPoints>
+    <selectable>true</selectable>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+			<Beauty>0</Beauty>
+			<Mass>0.44</Mass>
+			<DeteriorationRate>10</DeteriorationRate>
+		</statBases>
+    <altitudeLayer>Item</altitudeLayer>
+    <stackLimit>10</stackLimit>
+    <tickerType>Rare</tickerType>
+    <socialPropernessMatters>true</socialPropernessMatters>
+    <thingCategories>
+      <li>FoodMeals</li>
+    </thingCategories>
+    <alwaysHaulable>true</alwaysHaulable>
+    <comps>
+      <li Class="CompProperties_Forbiddable" />
+    </comps>
+    <pathCost>15</pathCost>
+    <resourceReadoutPriority>Last</resourceReadoutPriority>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <uiIconForStackCount>1</uiIconForStackCount>
+    <ingestible>
+      <foodType>Meal</foodType>
+      <maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
+      <optimalityOffsetHumanlikes>16</optimalityOffsetHumanlikes>
+    </ingestible>
+  </ThingDef>
+
+  <ThingDef ParentName="RefinedMealBase" Name="RefinedMealRottable" Abstract="True">
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>4</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+    <tradeability>Buyable</tradeability>
+  </ThingDef>
+
+  <ThingDef ParentName="RefinedMealRottable">
+    <defName>MealRefinedNutrientPaste</defName>
+    <label>refined nutrient paste meal</label>
+    <description>A synthetic mixture of protein, carbohydrates, and vitamins, amino acids and minerals. Everything the body needs, and absolutely disgusting. Has been so heavily processed that the original ingredients can no longer be determined. This process also changes the color of the paste to red, no one is quite sure why...</description>
+    <graphicData>
+      <texPath>Things/Item/Meal/NutrientPaste</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+	  <color>(90, 0, 130)</color>
+    </graphicData>
+    <statBases>
+      <MarketValue>10</MarketValue>
+      <Nutrition>0.9</Nutrition>
+    </statBases>
+    <ingestible>
+      <preferability>MealAwful</preferability>
+			<tasteThought>AteAwfulMeal</tasteThought>
+      <ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>Meal_Eat</ingestSound>
+    </ingestible>
+  </ThingDef>
+</Defs>
