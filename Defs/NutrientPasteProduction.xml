@@ -10,6 +10,7 @@
         <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
 		<recipeUsers>
 			<li>BiofuelRefinery</li>
+			<li>DrugLab</li>
 		</recipeUsers>
 		<fixedIngredientFilter>
 			<categories>

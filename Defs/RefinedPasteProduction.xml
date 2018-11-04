@@ -10,6 +10,7 @@
         <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
 		<recipeUsers>
 			<li>BiofuelRefinery</li>
+			<li>DrugLab</li>
 		</recipeUsers>
 		<fixedIngredientFilter>
 			<categories>
@@ -36,7 +37,7 @@
     <RecipeDef ParentName="MakeRefinedNutrientPasteBase">
         <defName>MakeRefinedNutrientPaste</defName>
         <label>Make refined paste from organics</label>
-        <description>Make a heavily processed nutrient paste meal by extracting nutrients from any organic material. Takes twice as long to make as regular nutrient paste meals, but the ingredients are no longer recognizable. This process also changes the color of the paste to red, no one is quite sure why...</description>
+        <description>Make a heavily processed nutrient paste meal by extracting nutrients from any organic material. Takes twice as long to make as regular nutrient paste meals, but the ingredients are no longer recognizable.</description>
         <jobString>Refining nutrient paste.</jobString>
 
         <ingredients>
@@ -62,7 +63,7 @@
     <RecipeDef ParentName="MakeRefinedNutrientPasteBase">
         <defName>MakeRefinedNutrientPasteBulk</defName>
         <label>Make batch of refined paste from organics</label>
-        <description>Make a batch of 10 heavily processed nutrient paste meals by extracting nutrients from any organic material. Takes twice as long to make as regular nutrient paste meals, but the ingredients are no longer recognizable. This process also changes the color of the paste to gray, no one is quite sure why...</description>
+        <description>Make a batch of 10 heavily processed nutrient paste meals by extracting nutrients from any organic material. Takes twice as long to make as regular nutrient paste meals, but the ingredients are no longer recognizable.</description>
         <jobString>Refining a batch of nutrient paste.</jobString>
 
         <ingredients>

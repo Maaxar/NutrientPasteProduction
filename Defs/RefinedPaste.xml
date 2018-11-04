@@ -47,12 +47,11 @@
 
   <ThingDef ParentName="RefinedMealRottable">
     <defName>MealRefinedNutrientPaste</defName>
-    <label>refined nutrient paste meal</label>
-    <description>A synthetic mixture of protein, carbohydrates, and vitamins, amino acids and minerals. Everything the body needs, and absolutely disgusting. Has been so heavily processed that the original ingredients can no longer be determined. This process also changes the color of the paste to gray, no one is quite sure why...</description>
+    <label>nutrient paste meal (refined)</label>
+    <description>A synthetic mixture of protein, carbohydrates, and vitamins, amino acids and minerals. Everything the body needs, and absolutely disgusting. Has been so heavily processed that the original ingredients can no longer be determined.</description>
     <graphicData>
       <texPath>Things/Item/Meal/NutrientPaste</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
-	  <color>(180, 180, 180)</color>
     </graphicData>
     <statBases>
       <MarketValue>10</MarketValue>
