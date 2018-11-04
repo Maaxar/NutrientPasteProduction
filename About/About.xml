@@ -1,24 +1,24 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
-    <name>Nutrient Paste Production</name>
-    <author>Maaxar</author>
-    <url>https://github.com/Maaxar/NutrientPasteProduction</url>
-    <targetVersion>1.0.2059</targetVersion>
-    <description>
-	Does not alter the vanilla paste dispenser.
-	
-	Allows the production of nutrient paste meals (either single meals or a batch of 10 meals) at the Biofuel Refinery.
-	
-	Requires completing the vanilla "Nutrient Paste" research project to enable the recipe.
-	
-	Has the same nutrient cost as vanilla nutrient paste (0.3 nutrition per meal), the same restrictions on ingredients (any raw food, but no plant matter like Hops or Hay), and does not remove the human or insect meat tags from the completed meals. Also does not require cooking skill, it is assigned under crafting, and uses the pawn's Unskilled Labor Speed.
-	
-	I tried to create a reasonable work amount/production time.
-	
-	Change Log:
-	
-	v0.1.1.0 - Added a recipe for refined nutrient paste: Makes a heavily processed nutrient paste meal by extracting nutrients from any organic material (including plant matter and haygrass). Takes twice as long to make as regular nutrient paste meals, but the ingredients are no longer recognizable. This process also changes the color of the paste to red, no one is quite sure why...
-	
-	Let me know if you think anything needs to be adjusted for balance.
-	</description>
+<name>Nutrient Paste Production</name>
+<author>Maaxar</author>
+<url>https://github.com/Maaxar/NutrientPasteProduction</url>
+<targetVersion>1.0.2059</targetVersion>
+<description>
+Does not alter the vanilla paste dispenser.
+
+Allows the production of nutrient paste meals (either single meals or a batch of 10 meals) at the Biofuel Refinery.
+
+Requires completing the vanilla "Nutrient Paste" research project to enable the recipe.
+
+Has the same nutrient cost as vanilla nutrient paste (0.3 nutrition per meal), the same restrictions on ingredients (any raw food, but no plant matter like Hops or Hay), and does not remove the human or insect meat tags from the completed meals. Also does not require cooking skill, it is assigned under crafting, and uses the pawn's Unskilled Labor Speed.
+
+I tried to create a reasonable work amount/production time.
+
+Change Log:
+
+v0.1.1.0 - Added a recipe for refined nutrient paste: Makes a heavily processed nutrient paste meal by extracting nutrients from any organic material (including plant matter and haygrass). Takes twice as long to make as regular nutrient paste meals, but the ingredients are no longer recognizable. This process also changes the color of the paste to gray, no one is quite sure why...
+
+Let me know if you think anything needs to be adjusted for balance.
+</description>
 </ModMetaData>
