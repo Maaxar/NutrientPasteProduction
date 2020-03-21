@@ -36,6 +36,6 @@ v0.1.0.0 - initial release
 
 v0.1.1.0 - Added a recipe for "nutrient paste meal (refined)": Makes a heavily processed nutrient paste meal by extracting nutrients from any organic material (including plant matter and haygrass). Takes twice as long to make as regular nutrient paste meals, but the ingredients are no longer recognizable to any pawn who eats it. Also added the ability to make both the regular and refined nutrient pastes at either the Biofuel Refinery or the Drug Lab. Nutrient Paste research is still required for the recipe to appear.
 
-v0.1.2.0 - Updated to support RimWorld version 1.1. Renamed "Nutrient paste meal (refined)" to "Refined paste meal". Added the ability to make nutrient paste meals and refined paste meals at the regular electric stove. "Packaged Survival Meal" research must be now be completed before the "Refined paste meal" recipe is available. Refined Paste no longer rots. Refined Paste no longer takes twice as much time to make, instead it takes twice as much raw material.
+v0.1.2.0 - Updated to support RimWorld version 1.1. Renamed "Nutrient paste meal (refined)" to "Refined paste meal". Added the ability to make nutrient paste meals and refined paste meals at the regular electric stove. "Packaged Survival Meal" research must now be completed before the "Refined paste meal" recipe is available. Refined paste meals no longer rot. Refined paste meal recipes no longer take twice as much time to make, instead they takes twice as much raw material as ingredients.
 	</description>
 </ModMetaData>
