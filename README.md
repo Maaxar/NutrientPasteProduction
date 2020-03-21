@@ -27,4 +27,6 @@ v0.1.0.0 - initial release
 
 v0.1.1.0 - Added a recipe for "nutrient paste meal (refined)": Makes a heavily processed nutrient paste meal by extracting nutrients from any organic material (including plant matter and haygrass). Takes twice as long to make as regular nutrient paste meals, but the ingredients are no longer recognizable to any pawn who eats it. Also added the ability to make both the regular and refined nutrient pastes at either the Biofuel Refinery or the Drug Lab. Nutrient Paste research is still required for the recipe to appear.
 
+v0.1.2.0 - Updated to support RimWorld version 1.1.
+
 Let me know if you think anything needs to be adjusted for balance.

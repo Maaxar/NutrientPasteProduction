@@ -5,6 +5,7 @@
     <thingClass>ThingWithComps</thingClass>
     <category>Item</category>
     <useHitPoints>true</useHitPoints>
+	<healthAffectsPrice>false</healthAffectsPrice>											  
     <selectable>true</selectable>
     <statBases>
       <MaxHitPoints>50</MaxHitPoints>
@@ -35,7 +36,7 @@
     </ingestible>
   </ThingDef>
 
-  <ThingDef ParentName="RefinedMealBase" Name="RefinedMealRottable" Abstract="True">
+<!--   <ThingDef ParentName="RefinedMealBase" Name="RefinedMealRottable" Abstract="True">
     <comps>
       <li Class="CompProperties_Rottable">
         <daysToRotStart>4</daysToRotStart>
@@ -43,12 +44,12 @@
       </li>
     </comps>
     <tradeability>Buyable</tradeability>
-  </ThingDef>
+  </ThingDef> -->
 
-  <ThingDef ParentName="RefinedMealRottable">
+  <ThingDef ParentName="RefinedMealBase">
     <defName>MealRefinedNutrientPaste</defName>
-    <label>nutrient paste meal (refined)</label>
-    <description>A synthetic mixture of protein, carbohydrates, and vitamins, amino acids and minerals. Everything the body needs, and absolutely disgusting. Has been so heavily processed that the original ingredients can no longer be determined.</description>
+    <label>refined paste meal</label>
+    <description>A synthetic mixture of protein, carbohydrates, and vitamins, amino acids and minerals. Everything the body needs, and absolutely disgusting. Has been so heavily processed that the original ingredients can no longer be determined. While it never rots, it can still deteriorate if left outside.</description>
     <graphicData>
       <texPath>Things/Item/Meal/NutrientPaste</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
@@ -63,5 +64,6 @@
       <ingestEffect>EatVegetarian</ingestEffect>
       <ingestSound>Meal_Eat</ingestSound>
     </ingestible>
+	<tradeability>Buyable</tradeability>
   </ThingDef>
 </Defs>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<RecipeDef Name="MakeRefinedNutrientPasteBase" Abstract="True">
+		<defName>MakeNutrientPasteBase</defName>
+		<workSpeedStat>UnskilledLaborSpeed</workSpeedStat>
+		<workSkill>Crafting</workSkill>
+		<!-- This states what skill gives speed boost? Definitely not what allows prioritization / disallowal... -->
+		<effectWorking>Cremate</effectWorking>
+		<soundWorking>Recipe_Cremate</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+		<recipeUsers>
+			<li>BiofuelRefinery</li>
+			<li>DrugLab</li>
+			<li>ElectricStove</li>
+		</recipeUsers>
+		<fixedIngredientFilter>
+			<categories>
+				<li>FoodRaw</li>
+				<li>PlantMatter</li>
+			</categories>
+			<thingDefs>
+				<li>Hay</li>
+			</thingDefs>
+			<disallowedCategories>
+				<li>FoodMeals</li>
+			</disallowedCategories>
+		</fixedIngredientFilter>
+		<defaultIngredientFilter>
+			<thingDefs>
+				<li>Hay</li>
+				<li>Meat_Human</li>
+				<li>Meat_Megaspider</li>
+			</thingDefs>
+		</defaultIngredientFilter>
+		<researchPrerequisite>PackagedSurvivalMeal</researchPrerequisite>
+	</RecipeDef>
+
+	<RecipeDef ParentName="MakeRefinedNutrientPasteBase">
+		<defName>MakeRefinedNutrientPaste</defName>
+		<label>make refined paste meal</label>
+		<description>Make a heavily processed nutrient paste meal by extracting nutrients from any organic material. Takes twice as much raw material to make as regular nutrient paste meals, but the ingredients are no longer recognizable. Refined nutrient paste does not rot and does not give food posioning. It still tastes awful though.</description>
+		<jobString>Making refined paste meal.</jobString>
+
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>FoodRaw</li>
+						<li>PlantMatter</li>
+					</categories>
+					<thingDefs>
+						<li>Hay</li>
+					</thingDefs>
+				</filter>
+				<count>0.6</count>
+			</li>
+		</ingredients>
+		<products>
+			<MealRefinedNutrientPaste>1</MealRefinedNutrientPaste>
+		</products>
+		<workAmount>200</workAmount>
+	</RecipeDef>
+
+	<RecipeDef ParentName="MakeRefinedNutrientPasteBase">
+		<defName>MakeRefinedNutrientPasteBulk</defName>
+		<label>make refined paste meal x10</label>
+		<description>Make a batch of 10 heavily processed nutrient paste meals by extracting nutrients from any organic material. Takes twice as much raw material to make as regular nutrient paste meals, but the ingredients are no longer recognizable. Refined nutrient paste does not rot and does not give food posioning. It still tastes awful though.</description>
+		<jobString>Making refined paste meals in bulk.</jobString>
+
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>FoodRaw</li>
+						<li>PlantMatter</li>
+					</categories>
+					<thingDefs>
+						<li>Hay</li>
+					</thingDefs>
+				</filter>
+				<count>6</count>
+			</li>
+		</ingredients>
+		<products>
+			<MealRefinedNutrientPaste>10</MealRefinedNutrientPaste>
+		</products>
+		<targetCountAdjustment>10</targetCountAdjustment>
+		<workAmount>2000</workAmount>
+	</RecipeDef>
+</Defs>
