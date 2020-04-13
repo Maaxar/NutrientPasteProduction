@@ -7,6 +7,7 @@
 		<li>1.0</li>
 		<li>1.1</li>
 	</supportedVersions>
+	<packageId>Maaxar.NutrientPasteProduction</packageId>
 	<description>
 Allows the production of 2 varieties of nutrient paste meals (either one at a time or a batch of 10 meals) at the Biofuel Refinery, the Drug Lab, or the regular Electric Stove:
 
