@@ -9,21 +9,21 @@
 	</supportedVersions>
 	<packageId>Maaxar.NutrientPasteProduction</packageId>
 	<description>
-Allows the production of 2 varieties of nutrient paste meals (either one at a time or a batch of 10 meals) at the Biofuel Refinery, the Drug Lab, or the regular Electric Stove:
+Allows the production of 2 varieties of nutrient paste meals (either one at a time or a batch of 10 meals) at the Biofuel Refinery, the Drug Lab, or the regular Electric/Fueled Stove:
 
-1) Make nutrient paste meal/Make nutrient paste meal x10: produces the vanilla "Nutrient paste meal".
+1) Make nutrient paste meal/Make nutrient paste meal x4: produces the vanilla "Nutrient paste meal".
 
 Has the same nutrient cost as vanilla nutrient paste (0.3 nutrition per meal), the same restrictions on ingredients (any raw food, but no plant matter like Hops or Hay), and does not remove the human or insect meat tags from the completed meals.
 
 You must complete the vanilla "Nutrient Paste" research project to enable the recipe for regular nutrient paste meals.
 
-2) Make refined paste meal/Make refined paste meal x10: produces the "Refined paste meal".
+2) Make packaged paste meal/Make packaged paste meal x4: produces the "Packaged paste meal".
 
-Makes a heavily processed nutrient paste meal by extracting nutrients from any organic material (including plant matter and haygrass). Takes twice as much raw material to make as regular nutrient paste meals (0.6 nutrition per meal), but the ingredients are no longer recognizable to any pawn who eats it. Refined nutrient paste does not rot and does not give food posioning. It still tastes awful though.
+Makes a heavily processed nutrient paste meal by extracting nutrients from any organic material (including plant matter and haygrass). Takes twice as much raw material to make as regular nutrient paste meals (0.6 nutrition per meal), but the ingredients are no longer recognizable to any pawn who eats it. Packaged nutrient paste does not rot and does not give food posioning. It still tastes awful though.
 
-You must complete the vanilla "Packaged Survival Meal" research project to enable the recipe for Refined paste meals.
+You must complete the vanilla "Packaged Survival Meal" research project to enable the recipe for Packaged nutrient paste meals.
 
-Making paste meals does not require cooking skill, it is assigned under crafting, and uses the pawn's General Labor Speed (formerly called Unskilled Labor Speed in RimWorld 1.0). For jobs at the Refinery or Drug Lab, the pawn must be assigned to Crafting. For jobs at the Electric Stove, the pawn must be assigned to Cooking.
+Making paste meals does not require cooking skill, it is assigned under crafting, and uses the pawn's General Labor Speed (formerly called Unskilled Labor Speed in RimWorld 1.0). For jobs at the Refinery or Drug Lab, the pawn must be assigned to Crafting. For jobs at the Electric or Fuelef Stove, the pawn must be assigned to Cooking.
 
 I tried to create a reasonable work amount/production time.
 
@@ -38,5 +38,8 @@ v0.1.0.0 - initial release
 v0.1.1.0 - Added a recipe for "nutrient paste meal (refined)": Makes a heavily processed nutrient paste meal by extracting nutrients from any organic material (including plant matter and haygrass). Takes twice as long to make as regular nutrient paste meals, but the ingredients are no longer recognizable to any pawn who eats it. Also added the ability to make both the regular and refined nutrient pastes at either the Biofuel Refinery or the Drug Lab. Nutrient Paste research is still required for the recipe to appear.
 
 v0.1.2.0 - Updated to support RimWorld version 1.1. Renamed "Nutrient paste meal (refined)" to "Refined paste meal". Added the ability to make nutrient paste meals and refined paste meals at the regular electric stove. "Packaged Survival Meal" research must now be completed before the "Refined paste meal" recipe is available. Refined paste meals no longer rot. Refined paste meals should no longer give food poisoning (vanilla nutrient paste meals still can). Refined paste meal recipes no longer take twice as much time to make, instead they takes twice as much raw material as ingredients.
+
+v0.1.3.0 - Renamed "Refined paste meal" to "Packaged paste meal". Added the ability to make nutrient paste meals and packaged paste meals at the fueled stove. Adjusted the bulk recipes to make 4 meals at a time like the vanilla bulk meal recipes. Changed the "Packaged paste meal" icon to be a green version of the Packaged Survival Meal icon.
+
 	</description>
 </ModMetaData>

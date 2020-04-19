@@ -5,7 +5,7 @@
 		<thingClass>ThingWithComps</thingClass>
 		<category>Item</category>
 		<useHitPoints>true</useHitPoints>
-		<healthAffectsPrice>false</healthAffectsPrice>											  
+		<healthAffectsPrice>false</healthAffectsPrice>
 		<selectable>true</selectable>
 		<statBases>
 			<MaxHitPoints>50</MaxHitPoints>
@@ -48,10 +48,11 @@
 
 	<ThingDef ParentName="RefinedMealBase">
 		<defName>MealRefinedNutrientPaste</defName>
-		<label>refined paste meal</label>
+		<label>packaged paste meal</label>
 		<description>A synthetic mixture of protein, carbohydrates, and vitamins, amino acids and minerals. Everything the body needs, and absolutely disgusting. Has been so heavily processed that the original ingredients can no longer be determined. While it never rots, it can still deteriorate if left outside.</description>
 		<graphicData>
-			<texPath>Things/Item/Meal/NutrientPaste</texPath>
+			<texPath>Things/Item/Meal/SurvivalPack</texPath>
+			<color>(0,250,0)</color>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<statBases>
@@ -64,6 +65,6 @@
 			<ingestEffect>EatVegetarian</ingestEffect>
 			<ingestSound>Meal_Eat</ingestSound>
 		</ingestible>
-		<tradeability>Buyable</tradeability>								  
+		<tradeability>Buyable</tradeability>
 	</ThingDef>
 </Defs>

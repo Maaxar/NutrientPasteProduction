@@ -12,7 +12,8 @@
 		<recipeUsers>
 			<li>BiofuelRefinery</li>
 			<li>DrugLab</li>
-			<li>ElectricStove</li>						 
+			<li>ElectricStove</li>
+			<li>FueledStove</li>
 		</recipeUsers>
 		<fixedIngredientFilter>
 			<categories>
@@ -57,14 +58,14 @@
 		<products>
 			<MealNutrientPaste>1</MealNutrientPaste>
 		</products>
-		<workAmount>200</workAmount>
+		<workAmount>300</workAmount>
 	</RecipeDef>
 
 	<RecipeDef ParentName="MakeNutrientPasteBase">
 		<defName>MakeNutrientPasteBulk</defName>
-		<label>make nutrient paste meal x10</label>
-		<description>Make a batch of 10 nutrient paste meals by extracting nutrients from raw food.</description>
-		<jobString>Making nutrient paste meals in bulk.</jobString>
+		<label>make nutrient paste meal x4</label>
+		<description>Make a batch of 4 nutrient paste meals by extracting nutrients from raw food.</description>
+		<jobString>Making 4 nutrient paste meals.</jobString>
 
 		<ingredients>
 			<li>
@@ -73,13 +74,13 @@
 						<li>FoodRaw</li>
 					</categories>
 				</filter>
-				<count>3</count>
+				<count>1.2</count>
 			</li>
 		</ingredients>
 		<products>
-			<MealNutrientPaste>10</MealNutrientPaste>
+			<MealNutrientPaste>4</MealNutrientPaste>
 		</products>
 		<targetCountAdjustment>10</targetCountAdjustment>
-		<workAmount>2000</workAmount>
+		<workAmount>1200</workAmount>
 	</RecipeDef>
 </Defs>

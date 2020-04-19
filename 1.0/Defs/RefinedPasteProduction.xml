@@ -13,6 +13,7 @@
 			<li>BiofuelRefinery</li>
 			<li>DrugLab</li>
 			<li>ElectricStove</li>
+			<li>FueledStove</li>
 		</recipeUsers>
 		<fixedIngredientFilter>
 			<categories>
@@ -38,9 +39,9 @@
 
 	<RecipeDef ParentName="MakeRefinedNutrientPasteBase">
 		<defName>MakeRefinedNutrientPaste</defName>
-		<label>make refined paste meal</label>
+		<label>make packaged paste meal</label>
 		<description>Make a heavily processed nutrient paste meal by extracting nutrients from any organic material. Takes twice as much raw material to make as regular nutrient paste meals, but the ingredients are no longer recognizable. Refined nutrient paste does not rot and does not give food posioning. It still tastes awful though.</description>
-		<jobString>Making refined paste meal.</jobString>
+		<jobString>Making packaged paste meal.</jobString>
 
 		<ingredients>
 			<li>
@@ -59,14 +60,14 @@
 		<products>
 			<MealRefinedNutrientPaste>1</MealRefinedNutrientPaste>
 		</products>
-		<workAmount>200</workAmount>
+		<workAmount>400</workAmount>
 	</RecipeDef>
 
 	<RecipeDef ParentName="MakeRefinedNutrientPasteBase">
 		<defName>MakeRefinedNutrientPasteBulk</defName>
-		<label>make refined paste meal x10</label>
+		<label>make packaged paste meal x4</label>
 		<description>Make a batch of 10 heavily processed nutrient paste meals by extracting nutrients from any organic material. Takes twice as much raw material to make as regular nutrient paste meals, but the ingredients are no longer recognizable. Refined nutrient paste does not rot and does not give food posioning. It still tastes awful though.</description>
-		<jobString>Making refined paste meals in bulk.</jobString>
+		<jobString>Making 4 packaged paste meals.</jobString>
 
 		<ingredients>
 			<li>
@@ -79,13 +80,13 @@
 						<li>Hay</li>
 					</thingDefs>
 				</filter>
-				<count>6</count>
+				<count>2.4</count>
 			</li>
 		</ingredients>
 		<products>
-			<MealRefinedNutrientPaste>10</MealRefinedNutrientPaste>
+			<MealRefinedNutrientPaste>4</MealRefinedNutrientPaste>
 		</products>
 		<targetCountAdjustment>10</targetCountAdjustment>
-		<workAmount>2000</workAmount>
+		<workAmount>1600</workAmount>
 	</RecipeDef>
 </Defs>
