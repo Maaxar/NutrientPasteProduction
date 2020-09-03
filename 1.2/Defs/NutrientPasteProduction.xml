@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<RecipeDef Name="MakeNutrientPasteBase" Abstract="True">
-		<defName>MakeNutrientPasteBase</defName>
+	<RecipeDef Name="NPP_MakeNutrientPasteBase" Abstract="True">
+		<defName>NPP_MakeNutrientPasteBase</defName>
 		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 		<workSkill>Crafting</workSkill>
 		<!-- This states what skill gives speed boost? Definitely not what allows prioritization / disallowal... -->
@@ -39,8 +39,8 @@
 		<researchPrerequisite>NutrientPaste</researchPrerequisite>
 	</RecipeDef>
 
-	<RecipeDef ParentName="MakeNutrientPasteBase">
-		<defName>MakeNutrientPaste</defName>
+	<RecipeDef ParentName="NPP_MakeNutrientPasteBase">
+		<defName>NPP_MakeNutrientPaste</defName>
 		<label>make nutrient paste meal</label>
 		<description>Make a nutrient paste meal by extracting nutrients from raw food.</description>
 		<jobString>Making nutrient paste meal.</jobString>
@@ -61,8 +61,8 @@
 		<workAmount>300</workAmount>
 	</RecipeDef>
 
-	<RecipeDef ParentName="MakeNutrientPasteBase">
-		<defName>MakeNutrientPasteBulk</defName>
+	<RecipeDef ParentName="NPP_MakeNutrientPasteBase">
+		<defName>NPP_MakeNutrientPasteBulk</defName>
 		<label>make nutrient paste meal x4</label>
 		<description>Make a batch of 4 nutrient paste meals by extracting nutrients from raw food.</description>
 		<jobString>Making 4 nutrient paste meals.</jobString>

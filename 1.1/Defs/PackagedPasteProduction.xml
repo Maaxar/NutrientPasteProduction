@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<RecipeDef Name="MakeRefinedNutrientPasteBase" Abstract="True">
-		<defName>MakeNutrientPasteBase</defName>
+	<RecipeDef Name="NPP_MakePackagedNutrientPasteBase" Abstract="True">
+		<defName>NPP_MakePackagedNutrientPasteBase</defName>
 		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 		<workSkill>Crafting</workSkill>
 		<!-- This states what skill gives speed boost? Definitely not what allows prioritization / disallowal... -->
@@ -37,8 +37,8 @@
 		<researchPrerequisite>PackagedSurvivalMeal</researchPrerequisite>
 	</RecipeDef>
 
-	<RecipeDef ParentName="MakeRefinedNutrientPasteBase">
-		<defName>MakeRefinedNutrientPaste</defName>
+	<RecipeDef ParentName="NPP_MakePackagedNutrientPasteBase">
+		<defName>NPP_MakePackagedNutrientPaste</defName>
 		<label>make packaged paste meal</label>
 		<description>Make a heavily processed nutrient paste meal by extracting nutrients from any organic material. Takes twice as much raw material to make as regular nutrient paste meals, but the ingredients are no longer recognizable. Refined nutrient paste does not rot and does not give food posioning. It still tastes awful though.</description>
 		<jobString>Making packaged paste meal.</jobString>
@@ -58,13 +58,13 @@
 			</li>
 		</ingredients>
 		<products>
-			<MealRefinedNutrientPaste>1</MealRefinedNutrientPaste>
+			<NPP_MealPackagedNutrientPaste>1</NPP_MealPackagedNutrientPaste>
 		</products>
 		<workAmount>400</workAmount>
 	</RecipeDef>
 
-	<RecipeDef ParentName="MakeRefinedNutrientPasteBase">
-		<defName>MakeRefinedNutrientPasteBulk</defName>
+	<RecipeDef ParentName="NPP_MakePackagedNutrientPasteBase">
+		<defName>NPP_MakePackagedNutrientPasteBulk</defName>
 		<label>make packaged paste meal x4</label>
 		<description>Make a batch of 4 heavily processed nutrient paste meals by extracting nutrients from any organic material. Takes twice as much raw material to make as regular nutrient paste meals, but the ingredients are no longer recognizable. Refined nutrient paste does not rot and does not give food posioning. It still tastes awful though.</description>
 		<jobString>Making 4 packaged paste meals.</jobString>
@@ -84,7 +84,7 @@
 			</li>
 		</ingredients>
 		<products>
-			<MealRefinedNutrientPaste>4</MealRefinedNutrientPaste>
+			<NPP_MealPackagedNutrientPaste>4</NPP_MealPackagedNutrientPaste>
 		</products>
 		<targetCountAdjustment>10</targetCountAdjustment>
 		<workAmount>1600</workAmount>
