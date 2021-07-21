@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+    <!-- Change Recipes to use tailoring benches only -->
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Ideology</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+
+                <!-- Exclude Dye from Packaged -->
+
+                <li Class="PatchOperationAdd">
+                    <xpath>*/RecipeDef[@Name = "NPP_MakePackagedNutrientPasteBase"]/fixedIngredientFilter</xpath>
+                    <value>
+                        <disallowedThingDefs>
+                            <li>Dye</li>
+                        </disallowedThingDefs>
+                    </value>
+                </li>
+
+            </operations>
+        </match>
+    </Operation>
+
+</Patch>
